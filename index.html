@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
+        <script src="script.js" type="text/javascript"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <div class = all-containers>
@@ -44,78 +44,167 @@
             <div class="background">
                 <!-- This group is for the buttons-->
                 <div class="buttons">
-                    <div>
-                        <div>Experience</div>
-                    </div>
-                    <div>
-                        <div>Projects</div>
-                    </div>
-                    <div>
-                        <div>Extracurriculars</div>
-                    </div>
-                    <div>
-                        <div>Resume/CV</div>
-                    </div>
+                    <button id="exp" class="opened">Experience</button>
+                    <button id="proj">Projects</button>
+                    <button id="extra">Extracurriculars</button>
+                    <button id="resume">Resume/CV</button>
                 </div>
                 <!-- This group is for the content-->
                 <div class="button-content-background">
-                    <div class="button-content-title">
-                        <h1>Student Organizations</h1>
+                    <div id="Experience" class="opened">
+                        <div class="exp-div-style">
+                            <div>
+                                <div class="button-content-title">
+                                    <h1>Technical Experience</h1>
+                                </div>
+                                <div class="exp-content1">
+                                    <div>
+                                        <a href="https://naturesmicrocosm.com/" target="_blank"><img src="./img/koskella.png" class="exp-img"></a>
+                                        <div>
+                                            <h2 id="exp-explanation-text">The Koskella Lab</h2>
+                                            <h4 id="exp-explanation-text">Undergrad Researcher (Aug 2021 - Present)</h4>
+                                            <h4 id="exp-shorter-explanation-text">Designing software to automate bioinformatic workflows that analyze the coevolutionary dynamics between phage and bacteria</h4>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.superfluiddx.com/" target="_blank"><img src="./img/molecular-stethoscope.jpg" class="exp-img"></a>
+                                        <div>
+                                            <h2 id="exp-explanation-text">Molecular Stethoscope x The Data Mine</h2>
+                                            <h4 id="exp-explanation-text">Data Science Intern (May 2022 - Aug 2022)</h4>
+                                            <h4 id="exp-shorter-explanation-text">Optimized uncertainty estimations and Monte Carlo simulations for Alzheimer's cf-RNA classification models</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="button-content-title">
+                                    <h1>Teaching Experience</h1>
+                                </div>
+                                <div class="exp-content2">
+                                    <div>
+                                        <a href="https://cs170.org/syllabus/" target="_blank"><img src="./img/pnpenguin.png" class="exp-img"></a>
+                                        <div>
+                                            <h2 id="exp-explanation-text">CS 170 Course Staff</h2>
+                                            <h4 id="exp-explanation-text">Undergrad Reader (Jan 2024 - Present)</h4>
+                                            <h4 id="exp-shorter-explanation-text">Helping grade assignments for course on efficient algorithms and complexity theory</h4>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="https://datamine.purdue.edu/" target="_blank"><img src="./img/purdue.png" class="exp-img"></a>
+                                        <div>
+                                            <h2 id="exp-explanation-text">Purdue Statistics Course</h2>
+                                            <h4 id="exp-explanation-text">Teaching Assistant (Aug 2020 - May 2021)</h4>
+                                            <h4 id="exp-shorter-explanation-text">Helped teach undergraduate data science course as a high school senior</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="button-content1">
-                        <div>
+                    <div id="Projects">
+                        <div class="button-content-title">
+                            <h1>Personal Projects</h1>
+                        </div>
+                        <div class="proj-content1">
                             <div>
-                                <a href="https://ml.berkeley.edu/" target="_blank"><img src="./img/machine_learning_at_berkeley_logo.jpg"></a>
+                                <div>
+                                    <a href="https://github.com/G4ce99/Retail-Listings-Web-Scraping" target="_blank"><img src="./img/webscraper.jpg"></a>
+                                </div>
+                                <div>
+                                    <h2 id="proj-shorter-explanation-text">Real Estate Web Scraper</h2>
+                                    <h4 id="proj-shorter-explanation-text">Scrapes real estate data by using Header manipulation, exponential backoff timers, and batched retrievals to bypass security</h4>
+                                </div>
                             </div>
                             <div>
-                                <h2 id="explanation-text">ML @ Berkeley</h2>
-                                <h4 id="explanation-text">External Relations Officer (Aug 2023 - Present)</h4>
-                                <h4 id="explanation-text">Club Member (Aug 2022 - Aug 2023)</h4>
+                                <div>
+                                    <a href="https://github.com/G4ce99/Personal_Website" target="_blank"><img src="./img/IMG_1718_square.jpg"></a>
+                                </div>
+                                <div>
+                                    <h2 id="proj-shorter-explanation-text">This Website</h2>
+                                    <h4 id="proj-shorter-explanation-text">The HTML, CSS, and Javascript code used to make my personal website</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <a href="https://github.com/G4ce99/RL_for_RL/" target="_blank"><img src="./img/RL_for_RL.jpg"></a>
+                                </div>
+                                <div>
+                                    <h2 id="proj-shorter-explanation-text">RL for RL</h2>
+                                    <h2 id="proj-shorter-explanation-text">Coming Soon!</h4>
+                                    <h4 id="proj-shorter-explanation-text">Training Deep Reinforcement Learning bots that play the video game Rocket League</h4>
+                                </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="button-content-title">
+                            <h1>Publications and Presentations</h1>
+                            <h2>Coming Soon! Currently, I have two research papers under peer review, which I will add here on publication.</h2>
+                        </div>
+
+                    </div>
+                    <div id="Extracurriculars">
+                        <div class="button-content-title">
+                            <h1>Student Organizations</h1>
+                        </div>
+                        <div class="extra-content1">
                             <div>
-                                <a href="https://igem.berkeley.edu/" target="_blank"><img src="./img/iGEM.png"></a>
+                                <div>
+                                    <a href="https://ml.berkeley.edu/" target="_blank"><img src="./img/machine_learning_at_berkeley_logo.jpg"></a>
+                                </div>
+                                <div>
+                                    <h2 id="extra-explanation-text">ML @ Berkeley</h2>
+                                    <h4 id="extra-explanation-text">External Relations Officer (Aug 2023 - Present)</h4>
+                                    <h4 id="extra-explanation-text">Club Member (Aug 2022 - Aug 2023)</h4>
+                                </div>
                             </div>
                             <div>
-                                <h2 id="explanation-text">iGEM @ Berkeley</h2>
-                                <h4 id="explanation-text">Project Lead (Jan 2022 - Dec 2022)</h4>
-                                <h4 id="explanation-text">Club Member (Aug 2021 - Jan 2022)</h4>
+                                <div>
+                                    <a href="https://igem.berkeley.edu/" target="_blank"><img src="./img/iGEM.png"></a>
+                                </div>
+                                <div>
+                                    <h2 id="extra-explanation-text">iGEM @ Berkeley</h2>
+                                    <h4 id="extra-explanation-text">Project Lead (Jan 2022 - Dec 2022)</h4>
+                                    <h4 id="extra-explanation-text">Club Member (Aug 2021 - Jan 2022)</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-content-title">
+                            <h1>Contests</h1>
+                        </div>
+                        <div class="extra-content2">
+                            <div>
+                                <div>
+                                    <a href="https://leetcode.com/G4ce99/" target="_blank"><img src="./img/LeetCode.jpg"></a>
+                                </div>
+                                <div>
+                                    <h2 id="extra-shorter-explanation-text">Competitive Programming</h2>
+                                    <h4 id="extra-shorter-explanation-text">Top 5% Worldwide Leetcode contest rating</h4>
+                                    <h4 id="extra-shorter-explanation-text">Solved over 450 Leetcode questions</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <a href="https://www.janestreet.com/puzzles/" target="_blank"><img src="./img/JaneStreet.png"></a>
+                                </div>
+                                <div>
+                                    <h2 id="extra-shorter-explanation-text">Jane Street Puzzle Contest</h2>
+                                    <h4 id="extra-shorter-explanation-text">Frequently on monthly leaderboard since Dec 2022</h4>
+                                    <h4 id="extra-shorter-explanation-text">Top 10 fastest solver in May 2023</h4>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <a href="https://www.chess.com/stats/puzzles/g4ce99" target="_blank"><img src="./img/Chess.webp"></a>
+                                </div>
+                                <div>
+                                    <h2 id="extra-shorter-explanation-text">Chess.com Ranked Chess Puzzles</h2>
+                                    <h4 id="extra-shorter-explanation-text">Ranked Top 0.5% in the world at online chess puzzles</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="button-content-title">
-                        <h1>Contests</h1>
-                    </div>
-                    <div class="button-content2">
-                        <div>
-                            <div>
-                                <a href="https://leetcode.com/G4ce99/" target="_blank"><img src="./img/LeetCode.jpg"></a>
-                            </div>
-                            <div>
-                                <h2 id="shorter-explanation-text">Competitive Programming</h2>
-                                <h4 id="shorter-explanation-text">Top 5% Worldwide Leetcode contest rating</h4>
-                                <h4 id="shorter-explanation-text">Solved over 450 Leetcode questions</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="https://www.janestreet.com/puzzles/" target="_blank"><img src="./img/JaneStreet.png"></a>
-                            </div>
-                            <div>
-                                <h2 id="shorter-explanation-text">Jane Street Puzzle Contest</h2>
-                                <h4 id="shorter-explanation-text">Frequently on monthly leaderboard since Dec 2022</h4>
-                                <h4 id="shorter-explanation-text">Top 10 fastest solver in May 2023</h4>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <a href="https://www.chess.com/stats/puzzles/g4ce99" target="_blank"><img src="./img/Chess.webp"></a>
-                            </div>
-                            <div>
-                                <h2 id="shorter-explanation-text">Chess.com Ranked Chess Puzzles</h2>
-                                <h4 id="shorter-explanation-text">Ranked Top 0.5% in the world at online chess puzzles</h4>
-                            </div>
+                    <div id="Resume">
+                        <div class="resume-styling">
+                            <object data= "./img/George_CV.pdf"> </object> 
                         </div>
                     </div>
                 </div>
